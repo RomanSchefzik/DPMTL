@@ -2,26 +2,21 @@
 Differential privacy in multi-task learning approaches
 
 # Description 
-This package provides an implementation of differential privacy in several multi-task learning (MTL) approaches for classification and regression problems, respectively. Basically, it offers the non-federated versions of the approaches implemented in the R packages [dsMTLBase] [here](https://github.com/transbioZI/dsMTLBase) (server-side) and [dsMTLClient](https://github.com/transbioZI/dsMTLClient)(client-side) for differential privacy in federated multi-task learning methods as introduced in Schefzik et al. (2025) as an add-on to the implemention presented in Cao et al. (2022).
-. In particular, differential privacy implementations for the three different MTL approaches MTL_L21, MTL_Trace and MTL_Net as described in Schefzik et al. (2025) are provided, for regression and classification settings, respectively. 
+This package provides an implementation of differential privacy in several multi-task learning (MTL) approaches for classification and regression problems, respectively. Basically, it offers the non-federated versions of the approaches implemented in the R packages [dsMTLBase] (https://github.com/transbioZI/dsMTLBase) (server-side) and [dsMTLClient] (https://github.com/transbioZI/dsMTLClient) (client-side) for differential privacy in federated multi-task learning methods as introduced in Schefzik et al. (2025) as an add-on to the implemention presented in Cao et al. (2022).
+ In particular, differential privacy implementations for the three different MTL approaches MTL_L21, MTL_Trace and MTL_Net as described in Schefzik et al. (2025) are provided, for regression and classification settings, respectively. 
 
 # Contributors
 Roman Schefzik aggregated, edited and finalized the code of the MTL and differential privacy functions, respectively. Han Cao provided the original implementation of the MTL functions. Xavier Escriba-Montagut and Juan R. Gonzalez contributed to the implemenation of the differential privacy mechanism.
 
-# Required Packages
-The package "corpcor" has to be installed from the CRAN in advance.
-```R
-install.packages("corpcor")
-```
 # Installation
 ```R
 install.packages("devtools")
-library("devtools")
+library(devtools)
 install_github("RomanSchefzik/DPMTL")
 ```
 # Example of usage
 Examples for a usage of the functions can be found in the respective function documentations.
-Exemplarily, we here consider the usage of the MTL_L21 implementation in a classification setting.
+Exemplarily, we here explicitly consider the usage of the MTL_L21 implementation in a classification setting.
 ```R
 library(DPMTL)
 #creation of synthetic predictor matrices and response vectors and setting of the model hyperparameters
@@ -41,6 +36,7 @@ model.private<-LR_MTL_L21(X=X0,Y=Y0,lam=lam0,C=C0,opts=opts1)
 ``` 
 # References
 Cao, H., Zhang, Y., Baumbach, J., Burton, P. R., Dwyer, D., Koutsouleris, N., Matschinske, J., Marcon, Y., Rajan, S., Rieg, T., Ryser-Welch, P., Späth, J., The COMMITMENT Consortium, Herrmann, C., and Schwarz, E. (2022). dsMTL: a computational framework for privacy-preserving, distributed multi-task machine learning. Bioinformatics, 38(21), 4919-4926. DOI: 10.1093/bioinformatics/btac616
+
 Schefzik, R., Cao, H., Rajan, S., Escriba-Montagut, X., Gonzalez, J. R., and Schwarz, E. (2025). Integrating differential privacy into federated multi-task learning algorithms in dsMTL.
 
 
