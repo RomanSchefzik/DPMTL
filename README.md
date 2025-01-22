@@ -2,7 +2,7 @@
 Differential privacy in multi-task learning approaches
 
 # Description 
-This package provides an implementation of differential privacy in several multi-task learning (MTL) approaches for classification and regression problems, respectively. Basically, it offers the non-federated versions of the approaches implemented in the R packages [dsMTLBase] (https://github.com/transbioZI/dsMTLBase) and [dsMTLClient] (https://github.com/transbioZI/dsMTLClient) for differential privacy in federated multi-task learning methods as introduced in Schefzik et al. (2025) as an add-on to the implemention presented in Cao et al. (2022).
+This package provides an implementation of differential privacy in several multi-task learning (MTL) approaches for classification and regression problems, respectively. Basically, it offers the non-federated versions of the approaches implemented in the R packages dsMTLBase (https://github.com/transbioZI/dsMTLBase) and dsMTLClient (https://github.com/transbioZI/dsMTLClient) for differential privacy in federated multi-task learning methods as introduced in Schefzik et al. (2025) as an add-on to the implemention presented in Cao et al. (2022).
  In particular, differential privacy implementations for the three different MTL approaches MTL_L21, MTL_Trace and MTL_Net as described in Schefzik et al. (2025) are provided, for regression and classification settings, respectively. 
 
 # Contributors
