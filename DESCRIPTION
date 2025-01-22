@@ -1,0 +1,11 @@
+Package: DPMTL
+Title: Differential privacy in multi-task learning approaches
+Version: 0.0.0.9000
+Author: Roman Schefzik, Han Cao, Xavier Escriba-Montagut, Juan R. Gonzalez
+Maintainer: Roman Schefzik <roman.schefzik@zi-mannheim.de>
+Description: This package integrates differential privacy mechanisms into several multi-task learning approaches for classification and regression problems, respectively.
+Imports:
+    corpcor
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
